@@ -9,11 +9,11 @@ public class Main {
 
             System.out.print("Ingrese el divisor (número por el cual dividir): ");
             int divisor = sc.nextInt();
-
-            double result = (double) dividendo / divisor;
-
+            if (divisor>0){
+                
+            int resultado=dividiendo/divisor;
             boolean divisionExacta = dividendo % divisor == 0;
-
+            int residuo = dividendo % divisor;
             System.out.println("Resultado de la división: " + result);
             if (divisionExacta) {
                 System.out.println("La división es exacta.");
@@ -21,5 +21,6 @@ public class Main {
                 System.out.println("La división no es exacta.");
             }
 
-        }
+        } else{ 
+                System.out.println("La operación es invalida");}
     }
